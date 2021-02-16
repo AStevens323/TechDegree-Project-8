@@ -11,6 +11,8 @@ const modalClose = document.querySelector(".modal-close");
 // END GLOBAL VARIABLES
 
 
+// FetchAPI() FOR PAGE INFORMATION
+
 fetch(urlAPI)
     .then(res => res.json())
     .then(res => res.results)
@@ -47,6 +49,8 @@ function displayEmployees(employeeData){
 
 };
 
+// END FetchAPI() FOR PAGE INFORMATION
+
 // MODAL DISPLAY -----------------------------------------------------------------------------------------
 
 function displayModal(index) {
@@ -56,6 +60,7 @@ function displayModal(index) {
     
     let date = new Date(dob.date);
     
+    // MODAL INFO ADDED TO HTML -----------------------------------------------
     const modalHTML = `
         <img class="avatar" src="${picture.large}" />
         <div class="text-container">
@@ -72,9 +77,11 @@ function displayModal(index) {
 
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
+    // END MODAL INFO ADDED TO HTML -----------------------------------------------
 
 };
 
+// CLICK EVENT LISTENER TO TRIGGER MODAL DISPLAY -----------------------------------------------
 gridContainer.addEventListener('click', e => {
     if (e.target !== gridContainer) {
     const card = e.target.closest(".card");
@@ -83,7 +90,11 @@ gridContainer.addEventListener('click', e => {
     displayModal(index);
     }
     });
+// END CLICK EVENT LISTENER TO TRIGGER MODAL DISPLAY -----------------------------------------------
 
+// MODAL CLOSE 'X' --------------------------------------------------------
+    
     modalClose.addEventListener('click', () => {
         overlay.classList.add("hidden");
         });
+// END MODAL CLOSE 'X' --------------------------------------------------------
