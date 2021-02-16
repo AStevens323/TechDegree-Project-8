@@ -3,6 +3,93 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.main-heading {
-    color: #525252;
+/* MAIN ELEMENT STYLING ---------------------------------------------------------------------------------------- */
+
+body {
+    background-color: #F7F7F7
 }
+
+header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* END MAIN ELEMENT STYLING ---------------------------------------------------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+
+.main-heading {
+    color: black;
+    font-size: 21px;
+}
+
+
+/* CONTAINER STYLING ---------------------------------------------------------------------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
+    margin: auto;
+    grid-gap: 30px;
+    width: 78%;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card, 
+.text-container {
+    background-color: #FEFEFE;
+}
+
+/* END CONTAINER STYLING ---------------------------------------------------------------------------------------- */
+
+/* INDIVIDUAL CARD STYLING ---------------------------------------------------------------------------------------- */
+
+.card {
+    border-radius: 5%;
+    border: 2px solid #CDCDCD;
+    padding: 25px 0;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.email {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.address {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+/* END INDIVIDUAL CARD STYLING ---------------------------------------------------------------------------------------- */
+
+/* MODAL OVERLAY STYLING ---------------------------------------------------------------------------------------- */
+
+
+
+/* END MODAL OVERLAY STYLING ---------------------------------------------------------------------------------------- */
