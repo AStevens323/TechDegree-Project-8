@@ -6,7 +6,8 @@
 /* MAIN ELEMENT STYLING ---------------------------------------------------------------------------------------- */
 
 body {
-    background-color: #F7F7F7
+    background-color: #F7F7F7;
+    position: relative;
 }
 
 header {
@@ -19,15 +20,14 @@ header {
 
 /* END MAIN ELEMENT STYLING ---------------------------------------------------------------------------------------- */
 
-.hidden {
-    display: none;
-}
-
+/* HEADING STYLING ------------------------------------------------------------------------------------------------- */
 
 .main-heading {
     color: black;
     font-size: 21px;
 }
+
+/* END HEADING STYLING ------------------------------------------------------------------------------------------------- */
 
 
 /* CONTAINER STYLING ---------------------------------------------------------------------------------------- */
@@ -90,6 +90,36 @@ header {
 
 /* MODAL OVERLAY STYLING ---------------------------------------------------------------------------------------- */
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4)
+}
 
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+    }
+    
+    .modal-close {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+        
 
 /* END MODAL OVERLAY STYLING ---------------------------------------------------------------------------------------- */
